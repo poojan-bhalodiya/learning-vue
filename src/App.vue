@@ -1,7 +1,7 @@
 // src/App.vue
 <template>
   <div id="app">
-    <button @click="requestPermission">Enable Notifications</button>
+    <button class=" p-2 rounded-full border-2 bg-slate-500" @click="requestPermission">Enable Notifications</button>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
         const permission = await Notification.requestPermission();
         if (permission === 'granted') {
           const token = await getToken(messaging, { vapidKey: 'BHnMLC2AUiDzWygw1jVhlKMDcQawKXTIl0KI46kkA7g3OqqTVmq3v1CGChjNo2ILc4o5XmTvFuP45alsbvXpokM' });
-          console.log('FCM Token:', token);
+          console.log('Notification permission granted. ', 'FCM Token:', token);
         } else {
           console.error('Notification permission not granted.');
         }
