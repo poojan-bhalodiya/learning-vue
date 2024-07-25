@@ -1,7 +1,7 @@
 // src/App.vue
 <template>
   <div id="app">
-    <button class=" p-2 rounded-full border-2 bg-slate-500 text-slate-300" @click="requestPermission">Enable
+    <button class=" p-2 rounded-full border-2 bg-slate-700 text-slate-300" @click="requestPermission">Enable
       Notifications</button>
   </div>
 </template>
