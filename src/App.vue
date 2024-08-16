@@ -1,10 +1,19 @@
-<script setup>
-
-</script>
-
 <template>
-  <h1 class="text-3xl text-red-500 font-bold underline">
-    Hello World</h1>
+  <div id="app">
+    <FolderList />
+  </div>
 </template>
 
-<style scoped></style>
+<script>
+import FolderList from './components/FolderList.vue';
+export default {
+  components: {
+    FolderList,
+    
+  },
+};
+</script>
+
+<style>
+/* Add any global styles here */
+</style>
