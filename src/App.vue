@@ -45,6 +45,14 @@ function mutateDeeply() {
   obj.value.nested.count++;
   obj.value.arr.push("baz");
 }
+
+// Reactive example
+const books = reactive([ref("Vue 3 Guide")]);
+console.log(books[0].value);
+
+const map = reactive(new Map([["count", ref(0)]]));
+
+console.log(map.get("count").value);
 </script>
 
 <template>
