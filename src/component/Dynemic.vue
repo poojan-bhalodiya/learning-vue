@@ -17,13 +17,13 @@ const tabs = {
   <div class="">
     <button
       class="p-2 border-2 m-1 border-indigo-800 bg-sky-600 hover:bg-sky-400 text-slate-800"
-      v-for="(_, tab) in tabs"
-      :key="tab"
+      v-for="(tab, i) in tab"
+      :key="i"
       :class="['tab-button', { active: currentTab === tab }]"
       @click="currentTab = tab"
     >
-      {{ tab }}
+      {{ i }}-{{ tab }}
     </button>
-    <component :is="tabs[currentTab]" class="tab"></component>
+    <!-- <component :is="tabs[currentTab]" class="tab"></component> -->
   </div>
 </template>

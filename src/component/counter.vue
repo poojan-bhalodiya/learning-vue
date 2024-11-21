@@ -13,9 +13,7 @@ function increment() {
     {{ count }}
   </div>
   <div>
-    <button @click="increment">➕➕</button>
+    <button @click="increment()">➕➕</button>
   </div>
-  <div>
-    <AlertBox> Something bad happened. </AlertBox>
-  </div>
+  <div></div>
 </template>

@@ -3,6 +3,7 @@
 // import ComponentProps from "./component/ComponentProps.vue";
 // import EventListening from "./component/EventListening.vue";
 import Dynemic from "./component/Dynemic.vue";
+// app.components(Counter);
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import Dynemic from "./component/Dynemic.vue";
   <div class="p-2 m-3 border-2 border-indigo-600"><ComponentProps /></div>
   <div class="p-2 m-3 border-2 border-sky-600"><EventListening /></div> -->
   <div><Dynemic /></div>
+  <!-- <Counter /> -->
 </template>
 
 <style scoped></style>
